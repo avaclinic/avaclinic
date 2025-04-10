@@ -1,3 +1,4 @@
+/* General styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -34,6 +35,7 @@ section {
   border-radius: 8px;
 }
 
+/* Flexbox layout for doctors */
 .doctors-container {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping for small screens */
@@ -42,16 +44,18 @@ section {
   box-sizing: border-box;
 }
 
-.doctor-left {
-  width: 100%; /* 100% width for small screens */
+.doctor-left, .doctor-right {
+  width: 100%; /* Stack doctors vertically on smaller screens */
   text-align: left;
   margin-bottom: 20px;
 }
 
+/* Vertical stacking for Dr. Vasu Kalkat */
 .doctor-right {
-  width: 100%; /* 100% width for small screens */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
   text-align: left;
-  margin-bottom: 20px;
+  align-items: flex-start; /* Align content to the left */
 }
 
 @media (min-width: 768px) {
@@ -62,8 +66,7 @@ section {
 
 @media (min-width: 1024px) {
   .doctor-right {
-    text-align: right; /* Ensure right alignment for Dr. Vasu */
-    margin-left: auto; /* Pushes the right doctor to the extreme right */
+    margin-left: auto; /* Pushes the right doctor to the extreme right on larger screens */
   }
 }
 

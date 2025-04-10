@@ -56,7 +56,7 @@ section {
 }
 
 .doctor-right {
-  width: 100%;
+  width: 100%; /* Start with full width */
 }
 
 @media (min-width: 768px) {
@@ -70,6 +70,7 @@ section {
   .doctor-right {
     width: 45%; /* Keep Vasdev on the right side */
     margin-left: auto; /* Pushes Vasdev's section to the extreme right */
+    text-align: left; /* Align text to the left for Vasdev */
   }
 }
 

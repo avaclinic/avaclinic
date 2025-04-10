@@ -1,57 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fbffff;
-  }
- .clinic-image {
-  max-width: 350px;
-  width: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fbffff;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+  background: #eadaeb;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #007bff;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.clinic-image {
+  max-width: 100%; /* makes sure the image scales */
   height: auto;
   display: block;
   margin: 20px auto;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
+section {
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+}
 
-  header {
-    background: #eadaeb;
-    padding: 20px;
-    text-align: center;
+.doctors-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-between;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.doctor-left, .doctor-right {
+  width: 100%; /* Default to full width */
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .doctor-left, .doctor-right {
+    width: 45%; /* On larger screens, each section takes 45% */
   }
-  
-  h1 {
-    color: #007bff;
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-family: "Times New Roman", Times, serif;
-  }
-  
-  section {
-    padding: 20px;
-    background: white;
-    margin: 20px;
-    border-radius: 8px;
-  }
-  
-  .doctors-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 40px;
-    width: 100%;
-    color: #007bff;
-    box-sizing: border-box;
-  }
-  
-  .doctor-left {
-    text-align: left;
-    width: 45%;
-  }
-  
-  .doctor-right {
-    text-align: left;         /* text inside aligns in a column */
-    width: max-content;       /* fits content */
-    margin-left: auto;        /* pushes whole block to far right */
-  }
-  
+}

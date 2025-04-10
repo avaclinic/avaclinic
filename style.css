@@ -4,14 +4,13 @@ body {
     padding: 0;
     background: #fbffff;
   }
-  .clinic-image {
-  max-width: 200px !important;
-  width: 100% !important;
-  height: auto !important;
+ .clinic-image {
+  max-width: 300px;
+  width: 90%;
+  height: auto;
   display: block;
   margin: 20px auto;
   border-radius: 10px;
-  object-fit: contain;
 }
 
   header {

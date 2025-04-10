@@ -36,26 +36,28 @@ section {
 }
 
 /* Flexbox layout for doctors */
-.doctors-container {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping for small screens */
-  justify-content: space-between;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
+ .doctors-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 40px;
+    width: 100%;
+    color: #007bff;
+    box-sizing: border-box;
+  }
 
 /* Vertical stacking for Dr. Vasu Kalkat */
 .doctor-right {
-  display: flex;
-  flex-direction: column; /* Stack content vertically */
-  text-align: left;
-  align-items: flex-start; /* Align content to the left */
-  margin-top: 10px; /* Adds a little space above the section */
-}
+    text-align: left;         /* text inside aligns in a column */
+    width: max-content;       /* fits content */
+    margin-left: auto;        /* pushes whole block to far right */
+  }
 
-.doctor-left {
-  width: 100%;
-}
+ .doctor-left {
+    text-align: left;
+    width: 45%;
+  }
+  
 
 @media (min-width: 768px) {
   .doctor-left, .doctor-right {

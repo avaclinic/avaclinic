@@ -20,7 +20,7 @@ h1 {
 }
 
 .clinic-image {
-  max-width: 100%; /* makes sure the image scales */
+  max-width: 100%; /* Ensures image scales with container */
   height: auto;
   display: block;
   margin: 20px auto;
@@ -36,20 +36,26 @@ section {
 
 .doctors-container {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping */
+  flex-wrap: wrap; /* Allow wrapping for small screens */
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
 .doctor-left, .doctor-right {
-  width: 100%; /* Default to full width */
+  width: 100%; /* Ensure full-width on small screens */
   text-align: left;
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
   .doctor-left, .doctor-right {
-    width: 45%; /* On larger screens, each section takes 45% */
+    width: 45%; /* 45% width for larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px; /* Adjust header font size for mobile */
   }
 }

@@ -49,25 +49,30 @@ section {
   margin-bottom: 20px;
 }
 
+.doctor-left p, .doctor-right p {
+  margin: 5px 0; /* Remove extra gaps between text */
+}
+
 .doctor-right {
-  margin-left: auto; /* Push to the extreme right */
+  width: 100%;
+  margin-left: auto; /* Align right */
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column; /* Stack vertically */
   justify-content: flex-start;
-  align-items: flex-start; /* Align items to the left */
+  align-items: flex-start;
 }
 
 .doctor-left {
-  width: 100%; /* Make the left doctor container take full width */
-}
-
-.doctor-left p, .doctor-right p {
-  margin: 5px 0; /* Remove extra gaps between text */
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .doctor-left, .doctor-right {
     width: 45%; /* 45% width for both doctors on larger screens */
+  }
+
+  .doctor-right {
+    margin-left: 10%; /* Add a margin to the left to push it to the right */
   }
 }
 

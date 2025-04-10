@@ -5,16 +5,15 @@ body {
     background: #fbffff;
   }
   .clinic-image {
-  width: 100%;
-  max-width: 250px;   /* adjust this value as needed */
-  height: auto;
+  max-width: 200px !important;
+  width: 100% !important;
+  height: auto !important;
   display: block;
   margin: 20px auto;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional: adds nice soft shadow */
+  object-fit: contain;
 }
 
-  
   header {
     background: #eadaeb;
     padding: 20px;

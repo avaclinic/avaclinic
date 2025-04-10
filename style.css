@@ -5,13 +5,14 @@ body {
     background: #fbffff;
   }
  .clinic-image {
-  max-width: 300px;
-  width: 90%;
+  max-width: 350px;
+  width: 100%;
   height: auto;
   display: block;
   margin: 20px auto;
-  border-radius: 10px;
+  border-radius: 12px;
 }
+
 
   header {
     background: #eadaeb;

@@ -42,15 +42,28 @@ section {
   box-sizing: border-box;
 }
 
-.doctor-left, .doctor-right {
-  width: 100%; /* Ensure full-width on small screens */
+.doctor-left {
+  width: 100%; /* 100% width for small screens */
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.doctor-right {
+  width: 100%; /* 100% width for small screens */
   text-align: left;
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
   .doctor-left, .doctor-right {
-    width: 45%; /* 45% width for larger screens */
+    width: 45%; /* 45% width for both doctors on larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .doctor-right {
+    text-align: right; /* Ensure right alignment for Dr. Vasu */
+    margin-left: auto; /* Pushes the right doctor to the extreme right */
   }
 }
 

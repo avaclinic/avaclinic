@@ -34,50 +34,50 @@ section {
   border-radius: 8px;
 }
 
-/* Flexbox layout for doctors */
+/* Container for doctors */
 .doctors-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0 20px;
   box-sizing: border-box;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
-.doctor-left {
-  width: 45%; /* Left side doctor */
+.doctor-left, .doctor-right {
   text-align: left;
+  width: 100%; /* Make both columns take full width on smaller screens */
+  margin-bottom: 20px;
 }
 
 .doctor-right {
-  width: 45%; /* Right side doctor */
-  text-align: left;
-  margin-left: auto; /* Pushes to the far right */
+  margin-left: auto; /* Push to the extreme right */
   display: flex;
   flex-direction: column; /* Stack items vertically */
   justify-content: flex-start;
+  align-items: flex-start; /* Align items to the left */
 }
 
-.doctor-right p {
-  margin: 5px 0; /* Remove gaps between text */
+.doctor-left {
+  width: 100%; /* Make the left doctor container take full width */
 }
 
-/* For mobile */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 28px; /* Adjust header font size for mobile */
-  }
-
-  .doctor-left, .doctor-right {
-    width: 100%; /* Ensure both doctors take full width on mobile */
-  }
-
-  .doctor-right {
-    margin-left: 0; /* Remove extreme right alignment on mobile */
-  }
+.doctor-left p, .doctor-right p {
+  margin: 5px 0; /* Remove extra gaps between text */
 }
 
 @media (min-width: 768px) {
   .doctor-left, .doctor-right {
-    width: 45%; /* Side by side layout on tablet and larger screens */
+    width: 45%; /* 45% width for both doctors on larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For mobile view */
+  h1 {
+    font-size: 28px; /* Adjust header font size for mobile */
+  }
+
+  .doctor-right {
+    margin-left: 0; /* Remove extreme right alignment on mobile */
   }
 }

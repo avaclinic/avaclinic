@@ -59,6 +59,11 @@ section {
   flex-direction: column; /* Stack items vertically */
   align-items: flex-start; /* Align items to the left */
   margin-left: auto; /* Push to the extreme right */
+  padding-left: 0; /* Remove any default padding */
+}
+
+.doctor-right p {
+  margin: 5px 0; /* Ensure no extra gap between text items */
 }
 
 @media (min-width: 768px) {

@@ -43,18 +43,22 @@ section {
   box-sizing: border-box;
 }
 
-.doctor-left, .doctor-right {
+/* Left side - Dr. Amrita Sandhu */
+.doctor-left {
   width: 100%; /* Full width for smaller screens (mobile) */
   text-align: left;
   margin-bottom: 20px; /* Add space between sections */
 }
 
-/* Vertical stacking for Dr. Vasu Kalkat */
+/* Right side - Dr. Vasu Kalkat */
 .doctor-right {
-  display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: flex-start; /* Align content to the left */
-  margin-top: 10px; /* Add margin to the top */
+  width: 100%; /* Full width for smaller screens (mobile) */
+  text-align: left;
+  margin-bottom: 20px; /* Add space between sections */
+  display: flex; /* Use flexbox for vertical alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  margin-left: auto; /* Push to the extreme right */
 }
 
 @media (min-width: 768px) {

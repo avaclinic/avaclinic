@@ -44,18 +44,17 @@ section {
   box-sizing: border-box;
 }
 
-.doctor-left, .doctor-right {
-  width: 100%; /* Stack doctors vertically on smaller screens */
-  text-align: left;
-  margin-bottom: 20px;
-}
-
 /* Vertical stacking for Dr. Vasu Kalkat */
 .doctor-right {
   display: flex;
   flex-direction: column; /* Stack content vertically */
   text-align: left;
   align-items: flex-start; /* Align content to the left */
+  margin-top: 10px; /* Adds a little space above the section */
+}
+
+.doctor-left {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -67,11 +66,5 @@ section {
 @media (min-width: 1024px) {
   .doctor-right {
     margin-left: auto; /* Pushes the right doctor to the extreme right on larger screens */
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 28px; /* Adjust header font size for mobile */
   }
 }

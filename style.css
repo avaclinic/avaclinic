@@ -5,8 +5,8 @@ body {
     background: #fbffff;
   }
   .clinic-image {
-    max-width: 400px;
-    width: 100%;
+    max-width: 200px;
+    width: 80%;
     height: auto;
     display: block;
     margin: 20px auto;

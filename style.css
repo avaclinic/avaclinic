@@ -1,4 +1,3 @@
-/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -34,7 +33,6 @@ section {
   border-radius: 8px;
 }
 
-/* Container for doctors */
 .doctors-container {
   display: flex;
   justify-content: space-between;
@@ -53,30 +51,28 @@ section {
   margin: 5px 0; /* Remove extra gaps between text */
 }
 
-.doctor-right {
-  width: 100%;
-  display: flex;
-  flex-direction: column; /* Stack vertically */
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 .doctor-left {
   width: 100%;
 }
 
+.doctor-right {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
+  /* For larger screens, make them 45% of the width */
   .doctor-left, .doctor-right {
-    width: 45%; /* 45% width for both doctors on larger screens */
+    width: 45%;
   }
 
+  /* Move Dr. Vasdev Kalkat to the extreme right */
   .doctor-right {
-    margin-left: auto; /* This ensures it moves to the extreme right */
-    padding-left: 0;
+    margin-left: auto; /* Push it to the right side */
+    padding-left: 20px; /* Optional: To add some space between the left and right sections */
   }
-  
+
   .doctor-left {
-    margin-right: 20px; /* Add some space between the two doctor containers */
+    margin-right: 20px; /* Space between left and right */
   }
 }
 
@@ -86,7 +82,11 @@ section {
     font-size: 28px; /* Adjust header font size for mobile */
   }
 
+  .doctor-left, .doctor-right {
+    width: 100%; /* Full width on mobile */
+  }
+
   .doctor-right {
-    margin-left: 0; /* Remove extreme right alignment on mobile */
+    margin-left: 0; /* Remove right alignment on mobile */
   }
 }

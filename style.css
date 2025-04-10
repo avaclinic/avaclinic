@@ -43,7 +43,7 @@ section {
 
 .doctor-left, .doctor-right {
   text-align: left;
-  width: 100%; /* Make both columns take full width on smaller screens */
+  width: 100%; /* Full width on smaller screens */
   margin-bottom: 20px;
 }
 
@@ -60,12 +60,18 @@ section {
 }
 
 @media (min-width: 768px) {
+  .doctors-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .doctor-left {
+    width: 45%; /* Keep Amrita on the left side */
+  }
   .doctor-right {
+    width: 45%; /* Keep Vasdev on the right side */
     margin-left: auto; /* Pushes Vasdev's section to the extreme right */
-    padding-left: 20px; /* Optional: Adds space between left and right sections */
   }
 }
-
 
 @media (max-width: 768px) {
   /* For mobile view */

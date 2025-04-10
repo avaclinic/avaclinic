@@ -60,21 +60,12 @@ section {
 }
 
 @media (min-width: 768px) {
-  /* For larger screens, make them 45% of the width */
-  .doctor-left, .doctor-right {
-    width: 45%;
-  }
-
-  /* Move Dr. Vasdev Kalkat to the extreme right */
   .doctor-right {
-    margin-left: auto; /* Push it to the right side */
-    padding-left: 20px; /* Optional: To add some space between the left and right sections */
-  }
-
-  .doctor-left {
-    margin-right: 20px; /* Space between left and right */
+    margin-left: auto; /* Pushes Vasdev's section to the extreme right */
+    padding-left: 20px; /* Optional: Adds space between left and right sections */
   }
 }
+
 
 @media (max-width: 768px) {
   /* For mobile view */
